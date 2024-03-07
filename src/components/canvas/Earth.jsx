@@ -17,7 +17,7 @@ const EarthCanvas = () => {
     <Canvas
       className="hidden lg:block"
       shadows
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{

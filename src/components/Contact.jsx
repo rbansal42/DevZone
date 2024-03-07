@@ -1,23 +1,21 @@
-import React from 'react'
-import { useState,useRef } from 'react'
-import {motion} from 'framer-motion'
-import emailjs from '@emailjs/browser'
+import React from "react";
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
-import {styles} from '../style'
-import { EarthCanvas } from './canvas'
-import { SectionWrapper } from '../hoc'
-import { slideIn } from '../utils/motion'
-
+import { styles } from "../style";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-
-  const formRef=useRef()
-  const [form,setForm]=useState({
-    name:"",
-    email:"",
-    message:""
-  })
-  const [loading,setLoading]=useState(false)
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
   const handleChanges = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -28,13 +26,13 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit=(e)=>{}
+  const handleSubmit = (e) => {};
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
-      <motion.div 
-      variants={slideIn("left","tween",0.2,1)}
-      className='flex-[0.75] rounded-2xl bg-black-100 p-8'
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex-[0.75] rounded-2xl bg-black-100 p-8"
       >
         {/* <p className={`${styles.sectionSubText}`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText}`}> Contact</h3>
@@ -64,18 +62,19 @@ const Contact = () => {
           className='bg-tertiary py-3 px-8 rounded-lg outlined-none w-fit border-none font-medium text-white-100 hover:bg-[#915eff] transition-all duration-300 ease-in-out flex items-center justify-center w-40 h-12 mx-auto'
           >{loading ?'Sending' :'Send'}</button>
         </form> */}
-        <h1 className={`${styles.sectionHeadText}`} >Registrations opening <br /> soon ...</h1>
+        <h1 className={`${styles.sectionHeadText}`}>
+          Registrations opening <br /> soon ...
+        </h1>
       </motion.div>
 
       <motion.div
-      variants={slideIn("right","tween",0.2,1)}
-      className='xl:flex-[1] xl:h-auto  md:h-[550px] h-[350px] relative '>
-      
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-[1] xl:h-auto  md:h-[550px] h-[350px] relative "
+      >
         <EarthCanvas />
-
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Contact,"contact")
+export default SectionWrapper(Contact, "contact");

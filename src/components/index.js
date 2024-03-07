@@ -1,13 +1,13 @@
-import { EarthCanvas, BallCanvas, Computers, StarsCanvas } from './canvas';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import About from './About';
-import Tech from './Tech';
-import Tracks from './Tracks';
-import Works from './Works';
-import Feedbacks from './Feedbacks';
-import Contact from './Contact';
-import Extrapage from './Extrapage';
+import { EarthCanvas, BallCanvas, Computers, StarsCanvas } from "./canvas";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import About from "./About";
+import Tech from "./Tech";
+import Tracks from "./Tracks";
+import Works from "./Works";
+import Feedbacks from "./Feedbacks";
+import Contact from "./Contact";
+import Extrapage from "./Extrapage";
 
 export {
   Hero,
@@ -18,9 +18,9 @@ export {
   Works,
   Feedbacks,
   Contact,
-  EarthCanvas, 
-  BallCanvas, 
-  Computers, 
+  EarthCanvas,
+  BallCanvas,
+  Computers,
   StarsCanvas,
-  Extrapage
-}
+  Extrapage,
+};
