@@ -1,7 +1,7 @@
 import { EarthCanvas, BallCanvas, Computers, StarsCanvas } from "./canvas";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import About from "./About";
+import AboutDevzone from "./AboutDevzone";
 import Tech from "./Tech";
 import Tracks from "./Tracks";
 import Works from "./Works";
@@ -12,7 +12,7 @@ import Extrapage from "./Extrapage";
 export {
   Hero,
   Navbar,
-  About,
+  AboutDevzone,
   Tech,
   Tracks,
   Works,

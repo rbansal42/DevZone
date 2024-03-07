@@ -9,7 +9,7 @@ import { fadeIn, textVariant, slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import Extrapage from "./Extrapage";
 
-const About = () => {
+const AboutDevzone = () => {
   const [data, setdata] = useState({
     visible: false,
     title: "",
@@ -82,7 +82,7 @@ const About = () => {
             image={data.image}
             content={data.content}
             handleToggle={handleToggle}
-            section={"about"}
+            section={"aboutDevzone"}
           />
         )}
       </div>
@@ -90,4 +90,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(AboutDevzone, "aboutDevzone");

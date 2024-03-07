@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 import { testimonials } from "../constants";
 
-const FeedbackCard = ({
+const AboutCard = ({
   index,
   testimonial,
   name,
@@ -36,16 +36,13 @@ const Feedbacks = () => {
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Learn More </p>
           <h1 className={styles.sectionHeadText}>About Devzone</h1>
-
-          <div className={` mt-5 pb-5 flex flex-wrap gap-7`}>
-            {testimonials.map((testimonial, index) => (
-              <FeedbackCard
+		  {testimonials.map((testimonial, index) => (
+              <AboutCard
                 key={testimonial.name}
                 index={index}
                 {...testimonial}
               />
             ))}
-          </div>
         </motion.div>
       </div>
     </div>

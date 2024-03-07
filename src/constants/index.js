@@ -120,11 +120,11 @@ const technologies = [
 
 const tracks = [
   {
-    title: "",
+    title: "Education",
     company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "education",
+    date: "Education",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

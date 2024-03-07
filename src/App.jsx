@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import {
-  About,
+  AboutDevzone,
   Contact,
   Feedbacks,
   Hero,
@@ -20,7 +20,7 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <About />
+        <AboutDevzone />
         <Feedbacks />
         <Tracks />
         {/* <Tech /> */}
