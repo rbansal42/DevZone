@@ -121,7 +121,6 @@ const technologies = [
 const tracks = [
   {
     title: "Education",
-    company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
     date: "Education",
@@ -170,20 +169,6 @@ const tracks = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial: [
-      "DevZone 1.0, the inaugural hackathon hosted by Sushant University, is set to blaze a trail of innovation and technological prowess in the heart of Gurugram! ",
-      "It is not just another hackathon; it's a dynamic platform where students from colleges across Delhi and the NCR region will come together to tackle challenges.",
-      "Join us on this exciting journey as we embark on a mission to invent, innovate, and inspire the future of education and technology.",
-    ],
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
 ];
 
@@ -253,4 +238,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, tracks, testimonials, projects };
+export { services, technologies, tracks, projects };

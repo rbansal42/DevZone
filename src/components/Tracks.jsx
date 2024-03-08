@@ -11,7 +11,6 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../style";
 import { tracks } from "../constants";
-import { textVariant, fadeIn } from "../utils/motion";
 
 import { SectionWrapper } from "../hoc";
 

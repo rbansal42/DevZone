@@ -4,8 +4,7 @@ import Navbar from "./Navbar";
 import AboutDevzone from "./AboutDevzone";
 import Tech from "./Tech";
 import Tracks from "./Tracks";
-import Works from "./Works";
-import Feedbacks from "./Feedbacks";
+import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Extrapage from "./Extrapage";
 
@@ -15,8 +14,7 @@ export {
   AboutDevzone,
   Tech,
   Tracks,
-  Works,
-  Feedbacks,
+  AboutUs,
   Contact,
   EarthCanvas,
   BallCanvas,
