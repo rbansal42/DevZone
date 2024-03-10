@@ -34,10 +34,6 @@ export const navLinks = [
     id: "tracks",
     title: "Tracks",
   },
-  {
-    id: "registeration",
-    title: "Registration",
-  },
 ];
 
 const services = [

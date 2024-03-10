@@ -8,6 +8,7 @@ import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Extrapage from "./Extrapage";
 import FAQ from "./FAQ";
+import Sponsors from "./Sponsors";
 
 export {
   Hero,
@@ -23,4 +24,5 @@ export {
   StarsCanvas,
   Extrapage,
   FAQ,
+  Sponsors
 };

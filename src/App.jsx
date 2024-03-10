@@ -8,6 +8,7 @@ import {
   Contact,
   StarsCanvas,
   FAQ,
+  Sponsors
 } from "./components";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <AboutDevzone />
         <AboutUs />
         <Tracks />
+        <Sponsors />
         <FAQ />
         <div className="relative z-0">
           <Contact />

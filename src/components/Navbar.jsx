@@ -10,6 +10,18 @@ import { logo, menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
   return (
     <nav
       className={`${styles.paddingX} flex w-full items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -28,7 +40,7 @@ const Navbar = () => {
             Devzone 1.0{" "}
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map(({ id, title }) => (
             <li
               key={id}
@@ -43,6 +55,13 @@ const Navbar = () => {
               <a href={`#${id}`}>{title}</a>
             </li>
           ))}
+
+          <div 
+            class="apply-button"
+            data-hackathon-slug="devzone" 
+            data-button-theme="dark-inverted"
+            className="apply-button max-h-[22px] max-w-[156px] scale-75 rounded-lg"
+          ></div>
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -79,6 +98,15 @@ const Navbar = () => {
                 <a href={`#${id}`}>{title}</a>
               </li>
             ))}
+
+            <li>
+              <div 
+                class="apply-button"
+                data-hackathon-slug="devzone" 
+                data-button-theme="dark-inverted"
+                className="apply-button h-[22px] w-[156px]"
+              ></div>
+            </li>
           </ul>
         </div>
       </div>
