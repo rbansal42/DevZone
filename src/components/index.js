@@ -7,6 +7,7 @@ import Tracks from "./Tracks";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Extrapage from "./Extrapage";
+import FAQ from "./FAQ";
 
 export {
   Hero,
@@ -21,4 +22,5 @@ export {
   Computers,
   StarsCanvas,
   Extrapage,
+  FAQ,
 };

@@ -7,6 +7,7 @@ import {
   Tracks,
   Contact,
   StarsCanvas,
+  FAQ,
 } from "./components";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <AboutDevzone />
         <AboutUs />
         <Tracks />
+        <FAQ />
         <div className="relative z-0">
           <Contact />
           {/* <StarsCanvas /> */}
