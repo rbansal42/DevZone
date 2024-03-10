@@ -28,8 +28,6 @@ const TrackCard = ({ track }) => {
         </div>
       }
     >
-      {/* <h3 className="vertical-timeline-element-title">{experience.title}</h3> */}
-      {/* <h4 className="vertical-timeline-element-subtitle">{experience.subtitle}</h4> */}
       <ul className="mt-5 list-disc ml-5 space-y-2">
         {track.points.map((point, index) => (
           <li
@@ -48,7 +46,6 @@ const Tracks = () => {
   return (
     <>
       <div>
-        {/* <p className={styles.sectionSubText} >Commonly asked questions</p> */}
         <h1 className={styles.sectionHeadText}>Tracks</h1>
 
         <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
